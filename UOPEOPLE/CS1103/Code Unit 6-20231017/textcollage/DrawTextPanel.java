@@ -40,7 +40,7 @@ public class DrawTextPanel extends JPanel {
     public DrawTextPanel() {
         textItems = new ArrayList<>();
         undoMenuItem = new JMenuItem("Remove Item");
-        undoMenuItem.setEnabled(false);
+        undoMenuItem.setEnabled(true);
         menuHandler = new MenuHandler();
 
         setLayout(new BorderLayout(10, 10));
@@ -94,9 +94,12 @@ public class DrawTextPanel extends JPanel {
             JMenuItem colorItem = new JMenuItem("Set Text Color...");
             colorItem.addActionListener(menuHandler);
             optionsMenu.add(colorItem);
+            
         }
         return menuBar;
     }
+    
+    
 
     public void doMousePress(MouseEvent e) {
         String text = input.getText().trim();

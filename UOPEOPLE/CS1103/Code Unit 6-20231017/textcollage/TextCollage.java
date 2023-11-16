@@ -16,7 +16,7 @@ public class TextCollage {
 		DrawTextPanel panel = new DrawTextPanel();
 		frame.setContentPane( panel );
 		frame.setJMenuBar(panel.getMenuBar());
-		frame.setResizable(false);
+		frame.setResizable(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack();
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
